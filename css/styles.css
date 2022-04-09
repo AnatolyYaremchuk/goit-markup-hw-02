@@ -6,7 +6,7 @@
   --brand-color: #2196f3;
   --blue-color: #2196f3;
   --blue-color-hover: #188ce8;
-  --link-color: #757575;
+  --link-color: rgba(117, 117, 117, 1);
 }
 
 body {
@@ -46,7 +46,7 @@ footer .logo {
   text-decoration: none;
 }
 
-.main-nav .main-nav-item:hover {
+.main-nav .main-nav-item:hover, .main-nav .main-nav-item.active {
   color: var(--blue-color);
 }
 
@@ -84,6 +84,7 @@ footer .logo {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -92,8 +93,6 @@ footer .logo {
 }
 .list-first-title {
   color: var(--main-text-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -102,8 +101,6 @@ footer .logo {
 }
 .list-first-text {
   color: var(--link-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -113,8 +110,6 @@ footer .logo {
 }
 .main-dicaration {
   color: var(--main-text-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -123,8 +118,6 @@ footer .logo {
 }
 .main-dicaration-first {
   color: var(--main-text-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -133,8 +126,6 @@ footer .logo {
 }
 .main-dicaration-leter {
   color: var(--link-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -152,10 +143,8 @@ footer .logo {
   top: 2097px;
 }
 .main-title-leter {
-  color: var(--background-white-color);
-  font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  color: var(--background-white-color);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -165,8 +154,7 @@ footer .logo {
   background-color: var(--brand-color);
 }
 .button-portfolio {
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -180,8 +168,6 @@ footer .logo {
 }
 .section-portfolio-item {
   color: var(--main-text-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -189,10 +175,15 @@ footer .logo {
 }
 .section-portfolio-title {
   color: var(--link-color);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  letter-spacing: 0.03em;
+}
+.main-title-adress {
+  color: var(--background-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0.03em;
 }
